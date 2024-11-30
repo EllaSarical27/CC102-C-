@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+ {
+    char symbol1, symbol2, symbol3;
+
+    // ACT #1: Patterns (a), (b), (c)
+    cout << "ACT #1: Patterns\n";
+
+    // Pattern (a): Increasing number of '*'
+    cout << "Pattern (a):\n";
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 0; j < i; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    // Pattern (b): Decreasing number of '#'
+    cout << "\nPattern (b):\n";
+    for (int i = 5; i > 0; i--) {
+        for (int j = 0; j < i; j++) {
+            cout << "#";
+        }
+        cout << endl;
+    }
+
+    // Pattern (c): Triangle with increasing '#'
+    cout << "\nPattern (c):\n";
+    for (int i = 1; i <= 5; i++) 
+        for (int j = 0; j < i; j++) {
+            cout << "#";
+        }
+        cout << endl;
+        return 0;
+  }
