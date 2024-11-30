@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main( )
+{
+    char symbol1, symbol2, symbol3;
+    // Dynamic Patterns (f), (g), (h);
+    cout << " Patterns\n";
+
+    // User input for symbols
+    cout << "Enter the 1st symbol to use (*, ^, #, $, @): ";
+    cin >> symbol1;
+    cout << "Enter the 2nd symbol to use (*, ^, $, @): ";
+    cin >> symbol2;
+    cout << "Enter the 3rd symbol to use (*, $, @): ";
+    cin >> symbol3;
+
+    // Pattern (f): 10x10 block with the 1st symbol
+    cout << "\nPattern (f):\n";
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            cout << symbol1;
+        }
+        cout << endl;
+    }
+
+    // Pattern (g): Right-angled triangle with the 2nd symbol
+    cout << "\nPattern (g):\n";
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j <= i; j++) {
+            cout << symbol2 << " ";
+        }
+        cout << endl;
+    }
+
+    // Pattern (h): Left-aligned triangle with the 3rd symbol
+    cout << "\nPattern (h):\n";
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 0; j < i; j++) {
+            cout << symbol3;
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
